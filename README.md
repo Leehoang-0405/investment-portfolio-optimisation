@@ -1,6 +1,5 @@
 # Investment Portfolio Optimisation
 A decision modelling project applying LP and ILP techniques to construct a diversified, risk-controlled ASX portfolio using historical return data.
-Investment Portfolio Optimisation using Decision Modelling
 
 Project Overview
 
