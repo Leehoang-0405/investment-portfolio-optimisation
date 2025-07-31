@@ -3,6 +3,7 @@ A decision modelling project applying LP and ILP techniques to construct a diver
 Investment Portfolio Optimisation using Decision Modelling
 
 Project Overview
+
 This project focuses on optimising an investment portfolio using advanced decision modelling techniques, leveraging four years of live stock market data from the Australian Securities Exchange (ASX). The goal was to develop robust, data-driven models that maximise return while managing risk and enforcing diversification across sectors.
 
 Two optimisation approaches were implemented:
