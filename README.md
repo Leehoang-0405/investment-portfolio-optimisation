@@ -13,6 +13,7 @@ Two optimisation approaches were implemented:
 All modelling and analysis were performed using Microsoft Excel Solver, with results consolidated and visualised in a comprehensive PowerPoint report.
 
 Business Value and Application
+
 This project simulates a real-world financial portfolio challenge: how to allocate capital across multiple assets while meeting business rules related to risk, return, and diversification.
 
 The skills and methods demonstrated here are directly applicable to roles in:
