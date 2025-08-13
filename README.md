@@ -1,83 +1,71 @@
-# Investment Portfolio Optimisation
+# 📈 Investment Portfolio Optimisation  
 
-Project Overview
+## 🌟 Highlights  
+- Real ASX stock market data used to simulate realistic investment scenarios.  
+- Two optimisation models: **Linear Programming (LP)** for allocation and **Integer Linear Programming (ILP)** for asset selection.  
+- Advanced constraint modelling to manage **risk**, ensure **sector diversification**, and meet business rules.  
+- Sensitivity analysis for deeper insight into constraint impacts and decision trade-offs.  
+- Clear, data-driven recommendations supported by Excel Solver outputs and visual reports.  
 
-This project focuses on optimising an investment portfolio using advanced decision modelling techniques, leveraging four years of live stock market data from the Australian Securities Exchange (ASX). The goal was to develop robust, data-driven models that maximise return while managing risk and enforcing diversification across sectors.
+---
 
-Two optimisation approaches were implemented:
+## ℹ️ Overview  
+This project was completed as part of my **Decision Modelling coursework**.  
+It focuses on **optimising an investment portfolio** using 4 years of live data from the **Australian Securities Exchange (ASX)** to maximise return while managing risk and enforcing diversification.  
 
-- Linear Programming (LP) for continuous allocation modelling
-- Integer Linear Programming (ILP) for discrete asset selection under strict constraints
+Two optimisation approaches were developed:  
+1. **Linear Programming (LP)** – Continuous allocation modelling.  
+2. **Integer Linear Programming (ILP)** – Discrete asset selection with strict business rules.  
 
-All modelling and analysis were performed using Microsoft Excel Solver, with results consolidated and visualised in a comprehensive PowerPoint report.
+All modelling and analysis were performed using **Microsoft Excel Solver**, with results presented in a detailed **PowerPoint report**.  
+---
 
-Business Value and Application
+## 📈 Key Components  
 
-This project simulates a real-world financial portfolio challenge: how to allocate capital across multiple assets while meeting business rules related to risk, return, and diversification.
+### Data Acquisition & Preparation  
+- Selected **8 ASX-listed companies** across **4 sectors**: Healthcare, Technology, Communications, Financials.  
+- Collected **Jan 2021 – Jan 2025** monthly closing prices.  
+- Calculated **monthly returns**, **average return**, and **volatility** (standard deviation).  
+- Classified assets into **low, medium, and high risk** tiers.  
 
-The skills and methods demonstrated here are directly applicable to roles in:
-- Financial and investment analysis
-- Operations research
-- Decision science and business strategy
-- Data-driven consulting
+### LP Model – Portfolio Allocation Optimisation  
+**Objective:** Maximise expected return.  
+**Constraints:**  
+- High-risk exposure ≤ 15%  
+- Low-risk assets must have the highest allocation  
+- Minimum sector allocation: 15% (with one sector ≥ 20%)  
+- Minimum 5% investment per asset  
+- Custom diversification rule for realistic portfolios  
 
-Key Components
-Data Acquisition & Preparation
-- Selected 8 publicly listed ASX companies across 4 distinct sectors: Healthcare, Technology, Communications, and Financials
-- Collected 4 years of monthly stock closing prices (Jan 2021 – Jan 2025)
-- Computed monthly returns, average return, and volatility (standard deviation) for each asset
-- Classified each asset into one of three risk tiers (low, medium, high)
+**Output:** Optimal allocation percentages + sensitivity analysis.  
 
-LP Model – Portfolio Allocation Optimisation
+### ILP Model – Asset Selection Optimisation  
+**Objective:** Maximise expected return under discrete selection rules.  
+**Constraints:**  
+- Select exactly **5 assets**  
+- All **4 sectors** represented  
+- Max **1 high-risk** asset; min **2 low-risk** assets  
+- High-risk allowed only if at least one medium-risk asset is selected  
+- Custom business rule for realistic investment scenarios  
 
-Objective: Maximise expected return
+**Output:** Optimal asset selection using binary decision variables.  
 
-Constraints:
-- High-risk exposure ≤ 15%
-- Low-risk investments must have the highest allocation
-- Minimum sector allocation: 15% (one sector ≥ 20%)
-- Minimum 5% investment per asset
-- Custom constraint to ensure realistic, diversified portfolios
+---
 
-Output: Optimal portfolio allocation by percentage
-Analysis: Full sensitivity analysis (binding constraints, shadow prices, reduced costs)
+## 💡 Business Value & Application  
+This project demonstrates the use of **mathematical optimisation in financial decision-making**, directly applicable to:  
+- Investment & portfolio analysis  
+- Operations research  
+- Decision science & strategy consulting  
+- Risk management and asset allocation  
 
-ILP Model – Asset Selection Optimisation
+---
 
-Objective: Maximise expected return under discrete selection rules
+## 👤 Author  
+**Ba Huy Hoang Le**  
+📧 huyhoangle040502@gmail.com  
 
-Constraints:
-- Select exactly 5 assets
-- All 4 sectors must be represented
-- Max 1 asset from high-risk category; min 2 from low-risk
-- A high-risk asset can only be included if at least one medium-risk asset is also selected
-- Custom rule to reflect a realistic investment scenario
+---
 
-Output: Optimised asset selection with binary inclusion logic
-
-Visual Report & Presentation
-- Conceptual diagrams of each model
-- Mathematical formulations of LP and ILP logic
-- Excel outputs, charts, and summary tables
-- Strategic interpretation of results, trade-offs, and recommendations
-
-Deliverables
-Portfolio_Optimisation.xlsx – Data preparation, LP and ILP models, solver setup, and sensitivity analysis
-
-Investment_Optimisation_Report.pptx – Visual summary of approach, results, and recommendations
-
-Tools & Techniques
-- Excel Solver (LP & ILP)
-- Financial return and risk modelling
-- Sensitivity analysis and constraint interpretation
-- Portfolio construction and optimisation strategy
-- Visual storytelling with PowerPoint
-
-Highlights
-- Real financial data used to simulate investment scenarios
-- Advanced constraint modelling in Excel (including sector and risk diversification)
-- Clear, data-driven decision support based on optimisation results
-- Practical understanding of capital allocation under uncertainty
-
-
-
+## 📜 Acknowledgement of AI Use  
+Some text drafting, grammar checks, and structure suggestions were assisted by AI tools, with all final content reviewed and edited by me to ensure originality and accuracy.  
